@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e706f; 
+}
+
+.login-container {
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+    padding: 20px;
+    background-color: white; /* White background for the login box */
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* A more pronounced shadow effect */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px); /* Slide in from bottom */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #000; /* Changed to black for the text */
+}
+
+.container {
+    text-align: center;
+    margin-top: 20px; /* Adjust margin to lift the sections */
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #000; /* Black color for the header text */
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    color: #333; /* Dark gray text for labels */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00796b; /* Darker teal button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #004d40; /* Darker hover color */
+}
